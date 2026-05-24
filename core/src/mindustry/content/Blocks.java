@@ -4850,7 +4850,7 @@ public class Blocks{
         }};
 
         disperse = new ItemTurret("disperse"){{
-            requirements(Category.turret, with(Items.thorium, 50, Items.oxide, 50, Items.silicon, 200, Items.beryllium, 350));
+            requirements(Category.turret, with(Items.thorium, 50, Items.oxide, 150, Items.silicon, 200, Items.beryllium, 350));
 
             ammo(
             Items.tungsten, new BasicBulletType(){{
@@ -4880,7 +4880,7 @@ public class Blocks{
             Items.thorium, new BasicBulletType(){{
                 damage = 90;
                 reloadMultiplier = 0.85f;
-                rangeChange = -120f;
+                rangeChange = -100f;
                 speed = 9.5f;
                 width = height = 16;
                 pierceCap = 2;
